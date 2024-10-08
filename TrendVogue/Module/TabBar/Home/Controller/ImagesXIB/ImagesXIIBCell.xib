@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImagesXIIBCell" id="gTV-IL-0wX" customClass="ImagesXIIBCell" customModule="TrendVogue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ly0-KV-DKc">
+                        <rect key="frame" x="3" y="3" width="44" height="44"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IE-sG-gsG">
+                        <rect key="frame" x="3" y="3" width="44" height="44"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
+                        <inset key="imageEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                        <state key="normal" title="10+more">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ly0-KV-DKc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="Bno-dr-KA5"/>
+                <constraint firstAttribute="bottom" secondItem="ly0-KV-DKc" secondAttribute="bottom" constant="3" id="H0i-5N-GFL"/>
+                <constraint firstItem="ly0-KV-DKc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="Ogt-A9-bZf"/>
+                <constraint firstAttribute="bottom" secondItem="1IE-sG-gsG" secondAttribute="bottom" constant="3" id="egT-A1-ZrV"/>
+                <constraint firstItem="1IE-sG-gsG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="ixr-bn-WyO"/>
+                <constraint firstItem="1IE-sG-gsG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="rNO-P5-yKY"/>
+                <constraint firstAttribute="trailing" secondItem="1IE-sG-gsG" secondAttribute="trailing" constant="3" id="rPW-up-76C"/>
+                <constraint firstAttribute="trailing" secondItem="ly0-KV-DKc" secondAttribute="trailing" constant="3" id="vpE-O0-4ZZ"/>
+            </constraints>
+            <connections>
+                <outlet property="imageCollection" destination="ly0-KV-DKc" id="w8S-E7-gHn"/>
+                <outlet property="moreImages" destination="1IE-sG-gsG" id="gHw-f5-Ucb"/>
+            </connections>
+            <point key="canvasLocation" x="45.801526717557252" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+</document>

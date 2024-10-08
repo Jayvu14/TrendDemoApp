@@ -1,0 +1,8 @@
+import Foundation
+import UIKit
+
+let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+let baseURL = "https://api.escuelajs.co/api/v1/products"
+let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
+let authenticationStoryboard = UIStoryboard(name: "Authentication", bundle: nil)
+let clearTextField = ""

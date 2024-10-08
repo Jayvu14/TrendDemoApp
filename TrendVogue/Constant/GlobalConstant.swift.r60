@@ -1,0 +1,6 @@
+import Foundation
+import UIKit
+
+enum GlobalConstant {
+    static let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+}

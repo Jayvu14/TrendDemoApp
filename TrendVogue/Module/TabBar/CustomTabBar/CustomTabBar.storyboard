@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Tab Bar View Controller-->
+        <scene sceneID="xXQ-Nh-0Ap">
+            <objects>
+                <viewController storyboardIdentifier="CustomTabBarViewController" id="7Y5-2v-HYy" customClass="CustomTabBarViewController" customModule="TrendVogue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OFa-FZ-80R">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgc-qp-5ft" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zum-D3-wsm">
+                                <rect key="frame" x="26" y="720" width="341" height="68"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-Z1-VBn">
+                                        <rect key="frame" x="4" y="4" width="333" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BC-Y5-fJh" userLabel="FirstTab">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnQ-DI-sHe">
+                                                        <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="DCR-P2-6JD"/>
+                                                            <constraint firstAttribute="width" constant="20" id="lIz-WU-TxZ"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="home"/>
+                                                        <connections>
+                                                            <action selector="onClickTabBar:" destination="7Y5-2v-HYy" eventType="touchUpInside" id="fJo-eI-pUY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="OnQ-DI-sHe" firstAttribute="centerY" secondItem="0BC-Y5-fJh" secondAttribute="centerY" id="C7N-Bn-B94"/>
+                                                    <constraint firstAttribute="height" constant="60" id="I3J-6x-lmq"/>
+                                                    <constraint firstAttribute="width" constant="60" id="Q15-AI-gAZ"/>
+                                                    <constraint firstItem="OnQ-DI-sHe" firstAttribute="centerX" secondItem="0BC-Y5-fJh" secondAttribute="centerX" id="TaJ-gv-svS"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHf-e7-kQc" userLabel="SecondTab">
+                                                <rect key="frame" x="91" y="0.0" width="60" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbt-oo-89m">
+                                                        <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="Avn-P1-eQE"/>
+                                                            <constraint firstAttribute="height" constant="20" id="VMB-fM-9yI"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="trolley"/>
+                                                        <connections>
+                                                            <action selector="onClickTabBar:" destination="7Y5-2v-HYy" eventType="touchUpInside" id="FdW-nk-7mi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Fbt-oo-89m" firstAttribute="centerX" secondItem="DHf-e7-kQc" secondAttribute="centerX" id="TXK-G9-bNZ"/>
+                                                    <constraint firstItem="Fbt-oo-89m" firstAttribute="centerY" secondItem="DHf-e7-kQc" secondAttribute="centerY" id="umS-VS-zvb"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36c-GC-tmM" userLabel="ThirdTab">
+                                                <rect key="frame" x="182" y="0.0" width="60" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VN-xi-9LM">
+                                                        <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="1Aq-z6-tXW"/>
+                                                            <constraint firstAttribute="width" constant="20" id="Acx-eG-xH2"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="heart"/>
+                                                        <connections>
+                                                            <action selector="onClickTabBar:" destination="7Y5-2v-HYy" eventType="touchUpInside" id="f73-qm-Q2P"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="0VN-xi-9LM" firstAttribute="centerY" secondItem="36c-GC-tmM" secondAttribute="centerY" id="Nsg-xK-0sD"/>
+                                                    <constraint firstItem="0VN-xi-9LM" firstAttribute="centerX" secondItem="36c-GC-tmM" secondAttribute="centerX" id="fxh-ZN-tt2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mw6-DR-dAN" userLabel="FourthTab">
+                                                <rect key="frame" x="273" y="0.0" width="60" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwg-YR-jZz">
+                                                        <rect key="frame" x="20" y="20" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="0dK-ge-aUf"/>
+                                                            <constraint firstAttribute="width" constant="20" id="P2k-J8-70h"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="profile"/>
+                                                        <connections>
+                                                            <action selector="onClickTabBar:" destination="7Y5-2v-HYy" eventType="touchUpInside" id="DRp-UZ-so9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="cwg-YR-jZz" firstAttribute="centerX" secondItem="Mw6-DR-dAN" secondAttribute="centerX" id="7mA-OR-uj9"/>
+                                                    <constraint firstItem="cwg-YR-jZz" firstAttribute="centerY" secondItem="Mw6-DR-dAN" secondAttribute="centerY" id="hXE-V1-anP"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1217101887" green="0.1248488799" blue="0.1568671167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="m8P-Z1-VBn" secondAttribute="trailing" constant="4" id="4nn-yt-f2g"/>
+                                    <constraint firstItem="m8P-Z1-VBn" firstAttribute="top" secondItem="Zum-D3-wsm" secondAttribute="top" constant="4" id="O6G-c1-q4C"/>
+                                    <constraint firstItem="m8P-Z1-VBn" firstAttribute="leading" secondItem="Zum-D3-wsm" secondAttribute="leading" constant="4" id="dBx-wL-GO0"/>
+                                    <constraint firstAttribute="bottom" secondItem="m8P-Z1-VBn" secondAttribute="bottom" constant="4" id="mi3-ok-9O5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RTG-qw-p8X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zum-D3-wsm" firstAttribute="centerX" secondItem="OFa-FZ-80R" secondAttribute="centerX" id="6O3-T7-7yG"/>
+                            <constraint firstItem="RTG-qw-p8X" firstAttribute="bottom" secondItem="Zum-D3-wsm" secondAttribute="bottom" constant="30" id="OuQ-Ow-8aA"/>
+                            <constraint firstItem="bgc-qp-5ft" firstAttribute="trailing" secondItem="RTG-qw-p8X" secondAttribute="trailing" id="S5l-cL-Vs4"/>
+                            <constraint firstAttribute="bottom" secondItem="bgc-qp-5ft" secondAttribute="bottom" id="pTh-8e-IWw"/>
+                            <constraint firstItem="bgc-qp-5ft" firstAttribute="leading" secondItem="RTG-qw-p8X" secondAttribute="leading" id="r3w-JW-uHa"/>
+                            <constraint firstItem="bgc-qp-5ft" firstAttribute="top" secondItem="OFa-FZ-80R" secondAttribute="top" id="sJC-w0-QDg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cartTabButton" destination="Fbt-oo-89m" id="HW9-kN-WTB"/>
+                        <outlet property="contentView" destination="bgc-qp-5ft" id="5yE-VG-CoP"/>
+                        <outlet property="firstTabView" destination="0BC-Y5-fJh" id="GUZ-6U-AIa"/>
+                        <outlet property="fourthTabView" destination="Mw6-DR-dAN" id="rXu-gS-hQl"/>
+                        <outlet property="homeTabButton" destination="OnQ-DI-sHe" id="rED-UJ-a4a"/>
+                        <outlet property="likeTabButton" destination="0VN-xi-9LM" id="jeV-Z2-QoT"/>
+                        <outlet property="profileTabButton" destination="cwg-YR-jZz" id="Rgy-GX-uvD"/>
+                        <outlet property="secondTabView" destination="DHf-e7-kQc" id="Sct-mj-Xap"/>
+                        <outlet property="tabBarView" destination="Zum-D3-wsm" id="EDl-ed-tJV"/>
+                        <outlet property="thirdTabView" destination="36c-GC-tmM" id="4TJ-c0-SGc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSM-s2-hxX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" width="256" height="256"/>
+        <image name="home" width="256" height="256"/>
+        <image name="profile" width="85.333335876464844" height="85.333335876464844"/>
+        <image name="trolley" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E43D8BBB-BB26-4F7B-87CD-FBA77F634E3C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F930419-EE81-46BA-B8E9-AB2800EB96F7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendVogue/Controller/CreatenewPasswordViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "createNewPassword(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F930419-EE81-46BA-B8E9-AB2800EB96F7 - 14be0cfbd45b1fe7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrendVogue.CreatenewPasswordViewController.createNewPassword(__C.UIButton) -&gt; ()"
+                  moduleName = "TrendVogue"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xceltec-053/Desktop/TrendVogue/TrendVogue/Controller/CreatenewPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "3107">
+               </Location>
+               <Location
+                  uuid = "8F930419-EE81-46BA-B8E9-AB2800EB96F7 - 14be0cfbd45b1fe7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrendVogue.CreatenewPasswordViewController.createNewPassword(__C.UIButton) -&gt; ()"
+                  moduleName = "TrendVogue"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xceltec-053/Desktop/TrendVogue/TrendVogue/Controller/CreatenewPasswordViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "3535">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
